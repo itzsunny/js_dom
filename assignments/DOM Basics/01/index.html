@@ -11,6 +11,24 @@
       <h1>Document Object Model</h1>
     <script>
       // your code goes here
+      let paraElement = document.createElement("p");
+      paraElement.innerText='Hello Javascript';
+      paraElement.innerHTML = "<span>I love <strong>Javascript</strong></span>";
+      document.body.appendChild(paraElement);
+
+      let unorderList = document.createElement("ul");
+      let listElement1 = document.createElement("li");
+      let listElement2 = document.createElement("li");
+      let listElement3 = document.createElement("li");
+      
+      listElement1.innerText = "Buy groceries";
+      listElement2.innerText = "Feed the cat";
+      listElement3.innerText = "Do laundry";
+      unorderList.appendChild(listElement1);
+      unorderList.appendChild(listElement2);
+      unorderList.appendChild(listElement3);
+      document.body.appendChild(unorderList);
+      unorderList.firstElementChild.remove()
     </script>
   </body>
 </html>

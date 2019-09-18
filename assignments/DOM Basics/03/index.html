@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+xsz<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Learning About Nodes</title>
@@ -39,5 +39,13 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+  
+    document.querySelectorAll("li").forEach(element => {element.style.background = "green";
+    element.style.color = "#fff"});
+    ul.firstElementChild.style.backgroundColor = "tomato";
+    ul.lastElementChild.style.backgroundColor = "pink";
+    ul.childNodes[1].style.backgroundColor = "blue";
+    ul.childNodes[0].style.backgroundColor ="coral";
+    ul.childnodes[2].style.backgroundColor ="aquamarine";
   </script>
 </html>
