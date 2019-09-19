@@ -2,6 +2,12 @@ var quotes;
 
 // Write your code here
 
+document.addEventListener("keydown" , (event) => {
+        let randomNum = Math.round(Math.random() * quotes.length);
+        document.querySelector("#quoteContainer").innerHTML = quotes[randomNum].quoteText;
+        document.querySelector("#authorName").innerHTML = quotes[randomNum].quoteAuthor;
+    }
+})
 
 
 quotes = [
@@ -314,3 +320,4 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+

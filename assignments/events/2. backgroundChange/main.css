@@ -1,0 +1,8 @@
+body {
+	display: grid;
+    grid-template-columns: repeat(16,1fr);
+}
+div {
+	height:10vh;
+}
+     
