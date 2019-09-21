@@ -81,6 +81,7 @@ input[type="text"] {
     border:1px solid rgba(226, 223, 223, 0.5);
     position: relative;
     z-index: 0;
+    outline: 0;
 }
 input::placeholder {
     color:rgb(238, 231, 231);
@@ -88,6 +89,7 @@ input::placeholder {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-weight: lighter;
+    
 }
 p {
     font-size: 0.5rem;
@@ -100,7 +102,7 @@ li {
     color:rgb(192, 188, 188);
     font-weight: 100;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 1rem 0 1rem 3.5rem;
+    padding: 1rem 3.5rem;
     border:1px solid rgba(226, 223, 223, 0.5);
     width: 100%;
     box-shadow: 0px 10px 20px -5px rgba(134, 131, 131, 0.5);

@@ -24,7 +24,7 @@ completed.className = "completed";
 
 function handleSubmit (event){
     console.log(event.target.value);
-    if (event.keyCode === 13 && event.target.value != "") {
+    if (event.keyCode === 13 && event.target.value.trim() != "") {
         console.log(event.keyCode);
         const check = document.createElement("input");
         check.setAttribute("type", "checkbox");
