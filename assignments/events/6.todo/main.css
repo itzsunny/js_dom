@@ -69,10 +69,13 @@ body {
     color:#E9D6D8;
     margin:1rem 0;
 }
-input[type="text"] {
+.input_container {
+    position: relative;
+}
+.input_container input[type="text"] {
     width:100%;
     height:4rem;
-    color:rgb(192, 188, 188);
+    color:#656565;
     padding-left:3.5rem;
     font-size: 1.5rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -83,7 +86,7 @@ input[type="text"] {
     z-index: 0;
     outline: 0;
 }
-input::placeholder {
+.input_container input::placeholder {
     color:rgb(238, 231, 231);
     font-size: 1.5rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -91,15 +94,24 @@ input::placeholder {
     font-weight: lighter;
     
 }
-p {
+.input_container i {
+    color:#E6E6E6;
+    position: absolute;
+    left:1rem;
+    top:1.2rem;
+    font-size: 1.5rem;
+}
+
+ .footer p {
     font-size: 0.5rem;
     color:rgb(238, 231, 231);
     cursor: pointer;
-    line-height: 2;
+    line-height: 2; 
 }
-li {
+.li_list {
+
     font-size: 1.5rem;
-    color:rgb(192, 188, 188);
+    color:#656565;
     font-weight: 100;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 1rem 3.5rem;
@@ -115,23 +127,29 @@ li {
     position :relative;
   
 }
+.foot {
+    display: none;
+}
+.footer_container {
+    display: block;
+}
 
 .footer-content {
-color:rgb(206, 194, 194);
-cursor: pointer;
+    color:rgb(206, 194, 194);
+    cursor: pointer;
 }
 .footer-content:hover {
     text-decoration:underline;
     cursor:pointer;
 }
-i {
+.list i {
     color:rgba(212, 207, 207, 0.1);
     position: absolute;
     right:1rem;
     font-weight: 100;
     font-size: 1.5rem;
 }
- i:hover {
+.list i:hover {
     color:rgb(224, 183, 183);
 }
 .check {
@@ -144,8 +162,18 @@ i {
 .item {
     position: absolute;
     left:1rem;
+    bottom:0.4rem;
 }
-.item,.all,.completed,.active {
+.clear_completed {
+    position: absolute;
+    right:1rem; 
+    bottom:0.4rem;
+    display: none;
+}
+.clearCompleted {
+    display: block;
+}
+.item,.all,.completed,.active,.clear_completed {
     margin:0 0.7rem;
     font-size: 0.9rem;
     padding:0.2rem;
@@ -162,11 +190,11 @@ i {
     border:1px solid #E9D6D8;
     border-radius: 4px;
 }
-.completed:hover{
+.completed:hover {
     border:1px solid #E9D6D8;
     border-radius: 4px;
 }
-.active:hover{
+.active:hover {
     border:1px solid #E9D6D8;
     border-radius: 4px;
 }
@@ -179,6 +207,7 @@ h3 {
     position: relative;
     border:1px solid rgba(226, 223, 223, 0.5);
     box-shadow: 0px 0px 10px -5px rgba(134, 131, 131, 0.5);
+
 
 }
 .f1,.f2,.f3 {
